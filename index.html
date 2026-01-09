@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Explorer | Bootstrap Project</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      background-color: #0d1117;
+      color: white;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #ffc107, #ff9800);
+      color: black;
+      border-radius: 0 0 30px 30px;
+    }
+
+    .card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    }
+
+    footer {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">Mountain Explorer</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" placeholder="Search">
+        <button class="btn btn-warning">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO TITLE -->
+<div class="hero">
+  <h1 class="display-4 fw-bold">Explore the Himalayas</h1>
+  <p class="lead">Discover nature, beauty & adventure</p>
+</div>
+
+<!-- CAROUSEL -->
+<div class="container mt-5">
+  <div id="carouselExample" class="carousel slide carousel-fade">
+    <div class="carousel-inner rounded-4 overflow-hidden">
+      <div class="carousel-item active">
+        <img src="https://i.ytimg.com/vi/nZmO8B9rRik/hq720.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.wallpapersden.com/image/download/himalaya-4k_a2hra2aUmZqaraWkpJRpZWVlrWdnamU.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://wallpapers.com/images/hd/himalaya-pictures-1ao4uzjrpjn0nhi8.jpg" class="d-block w-100">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+<!-- CARDS -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4 text-warning">Popular Destinations</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card bg-dark text-light">
+        <img src="https://images.wallpapersden.com/image/download/himalaya-4k_a2hra2aUmZqaraWkpJRpZWVlrWdnamU.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Snow Peaks</h5>
+          <p class="card-text">Experience breathtaking snow-covered mountains.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card bg-dark text-light">
+        <img src="https://i.ytimg.com/vi/nZmO8B9rRik/hq720.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Valleys</h5>
+          <p class="card-text">Peaceful valleys with stunning landscapes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card bg-dark text-light">
+        <img src="https://wallpapers.com/images/hd/himalaya-pictures-1ao4uzjrpjn0nhi8.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Adventure Trails</h5>
+          <p class="card-text">Perfect routes for trekking and exploration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FORM -->
+<div class="container mt-5">
+  <h2 class="text-center bg-warning text-dark p-2 rounded">Registration Form</h2>
+  <div class="mt-4">
+    <input class="form-control mb-3" type="file">
+    <input class="form-control mb-3" type="file" multiple>
+    <input class="form-control mb-3" type="file" disabled>
+    <input class="form-control form-control-sm mb-3" type="file">
+    <input class="form-control form-control-lg mb-3" type="file">
+  </div>
+
+  <div class="text-center">
+    <button class="btn btn-success me-2">Submit</button>
+    <button class="btn btn-danger">Reset</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="mb-0">&copy; 2026 Mountain Explorer | Designed with Bootstrap</p>
+</footer>
+
+</body>
+</html>
